@@ -1,0 +1,48 @@
+#forecastTab li a.active {
+    border-bottom-color: transparent;
+    background-color: var(--CFColors-Orange-rgba);
+    color: var(--CFColors-darkGrey-rgba);
+    font-weight: bold;
+}
+
+#forecastTab li a {
+    border-bottom-color: transparent;
+    /*background-color: var(--CFColors-ltGrey-rgba);*/
+    color: white;
+    font-weight: 400;
+}
+#location{
+    font-weight:bolder;
+}
+#wpMain {
+    color: white;
+    padding: 20px;
+    resize: vertical;
+}
+#wpCurrent{
+    resize:vertical;
+}
+#currentTemp {
+    font-size: 5em;
+    
+    color: white;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+   
+}
+#wpConditions {
+    
+    color: white;
+    padding: 20px;
+    resize: vertical;
+
+}
+
+#wpForecast {
+   
+    color: white;
+    padding: 20px;
+    resize: vertical;
+    font-size: 1em;
+}

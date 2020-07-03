@@ -1,0 +1,138 @@
+.action{
+    position:fixed;
+    bottom:50px;
+    left:50px;
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow:0 5px 5px rgba(0,0,0,0.1);
+
+
+    .container-card{
+        position: absolute;
+        bottom:55px;
+        background:#fff;
+        min-width:150px;
+        border-radius: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+.card{
+    position: relative;
+    width:320px;
+    height:450px;
+    background:#232323;
+    border-radius:20px;
+    overflow:hidden;
+
+    &:before{
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+       background:#9bdc28;
+       background-attachment:cover;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    &:after{
+        content:'Search';
+        position:absolute;
+        top:60%;
+        
+        font-size:6em;
+        font-weight:800;
+        font-style:italic;
+        color: rgba(255,255,255,0.04);
+        
+    }
+
+
+    
+    .imgBx{
+        position:absolute;
+        top:10%;
+        transform: translateY(-50%);
+        z-index:100000;
+        width:100%;
+        height:220px;
+        transition:0.5s;
+
+        img{
+            position: absolute;
+            top:80%;
+            left:80%;
+            transform: translate(-60%, -80%) ;
+            width:270px;
+        }
+    }
+}
+        
+    }
+}
+.action span{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:#9bdc28;
+    font-size: 2.2em;
+transition: 0.3s ease-in-out;
+
+
+}
+.action.active span{
+    transform: rotate(135deg);
+}
+.action.active .container-card{
+    bottom:65px;
+    opacity: 1;
+    visibility:visible ;
+    transition:0.3s;
+
+    
+}
+
+
+.container-card .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+.container-card .card:hover .imgBx{
+    top:0%;
+    transform: translateY(0%);
+}
+
+.container-card .card .contentBox{
+    position: absolute;
+   bottom:0 !important;
+    width:100%;
+    min-height:100%;
+    margin-top:200px;
+
+    transition:1s;
+    z-index:10;
+}
+
+.search-container{
+    margin-top:400px;
+    padding:10px;
+   
+
+
+    input[type=text]{
+        width:75%;
+        border:1px solid white;
+        border-radius:20px;
+    }
+}
+
+.btn-outline-success{
+    color:#9bdc28 !important;
+}
