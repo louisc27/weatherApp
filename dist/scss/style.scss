@@ -1,8 +1,8 @@
 @import '../scss/components/loader';
 @import '../scss/components/forecast';
-@import '../scss/components/neonOverlay';
-@import '../scss/components/search';
 
+@import '../scss/components/search';
+@import '../scss/components/accordian';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&display=swap');
 
 *{
@@ -100,6 +100,7 @@ font-size:1.3em;
 }
 &:nth-child(5){
     grid-column: span 5;
+    
 }
 
 
@@ -130,4 +131,3 @@ background: linear-gradient(235deg, #ff005e,#010615,#fbff00) !important;
         }
     }
 }
-
